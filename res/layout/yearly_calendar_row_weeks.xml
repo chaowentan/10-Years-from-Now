@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/weeksRow" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:orientation="horizontal">
+
+	<include android:id="@+id/week1" layout="@layout/yearly_calendar_week" />
+	<include android:id="@+id/week2" layout="@layout/yearly_calendar_week" />
+
+</LinearLayout>

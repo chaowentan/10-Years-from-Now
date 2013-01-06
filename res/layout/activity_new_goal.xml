@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout style="@style/NewGoalForm" >
+
+        <!-- Completion Date -->
+
+        <TextView
+            android:id="@+id/completionDatePickerButtonLabel"
+            style="@style/NewGoalFormLabel"
+            android:text="@string/new_goal_form_label_completion_date" />
+
+        <TextView
+            android:id="@+id/completionDatePickerButton"
+            style="@style/NewGoalDatePickerSpinner"
+            android:onClick="showDatePickerDialog"
+            android:text="                             " />
+
+        <!-- Goal -->
+
+        <TextView
+            android:id="@+id/goalLabel"
+            style="@style/NewGoalFormLabel"
+            android:text="@string/new_goal_form_label_goal" />
+
+        <EditText
+            android:id="@+id/goal"
+            style="@style/NewGoalTextBox" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+</ScrollView>

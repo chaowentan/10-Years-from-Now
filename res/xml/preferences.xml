@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <chao.android.tenyearsfromnow.DatePreference
+        android:key="user_birth_date"
+        android:title="@string/user_birth_date_title" />
+
+</PreferenceScreen>

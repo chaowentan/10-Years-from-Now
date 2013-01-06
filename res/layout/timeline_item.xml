@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TimelineItem" >
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/TimelineDate"
+        android:text="@string/timeline_date_sample" />
+
+    <RelativeLayout style="@style/TimelineImageContainer" >
+
+        <ImageView style="@style/TimelineLine" />
+
+        <ImageView style="@style/TimelineDot" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/TimelineGoalContainer" >
+
+        <ImageView
+            android:id="@+id/divider"
+            style="@style/TimelineGoalDivider" />
+
+        <TextView
+            android:id="@+id/goal"
+            style="@style/TimelineGoal"
+            android:text="Curabitur vel justo ut diam sagittis pulvinar eu quis velit." />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="calendar_spacing">8dp</dimen>
+    <dimen name="calendar_spacing_half">4dp</dimen>
+    <dimen name="yearly_calendar_spacing">8dp</dimen>
+    <dimen name="yearly_calendar_spacing_half">4dp</dimen>
+    <dimen name="yearly_calendar_spacing_2x">16dp</dimen>
+    <dimen name="yearly_calendar_spacing_3x">24dp</dimen>
+    <dimen name="yearly_calendar_spacing_4x">32dp</dimen>
+    <dimen name="single_column_calendar_spacing">8dp</dimen>
+    <dimen name="single_column_calendar_spacing_half">4dp</dimen>
+    <dimen name="timeline_spacing">14dp</dimen>
+    <dimen name="timeline_spacing_half">7dp</dimen>
+    <dimen name="timeline_spacing_2x">28dp</dimen>
+    <dimen name="timeline_image_size">9dp</dimen>
+    <dimen name="text_size_lv1">43sp</dimen>
+    <dimen name="text_size_lv2">16sp</dimen>
+    <dimen name="text_size_lv3">12sp</dimen>
+    <dimen name="text_size_new_goal_form_label">30sp</dimen>
+    <dimen name="text_size_new_goal_form">18sp</dimen>
+    <dimen name="text_size_edit_goal_form">16sp</dimen>
+    <dimen name="decadal_calendar_age_star_size">10dp</dimen>
+
+</resources>

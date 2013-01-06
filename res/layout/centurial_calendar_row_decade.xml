@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/decadeRow"
+    style="@style/CenturialCalendarDecadeRow" >
+
+    <LinearLayout
+        android:id="@+id/yearRow1"
+        style="@style/CenturialCalendarYearRow" >
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yearRow2"
+        style="@style/CenturialCalendarYearRow" >
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+
+        <include layout="@layout/centurial_calendar_year" />
+    </LinearLayout>
+
+    <ImageView style="@style/CenturialCalendarSeparator" />
+
+</LinearLayout>

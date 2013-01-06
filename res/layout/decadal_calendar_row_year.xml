@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yearRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/SingleColumnCalendarCell" >
+
+        <LinearLayout
+            android:id="@+id/yearAndAge"
+            style="@style/DecadalCalendarYearAndAgeCell" >
+
+            <TextView
+                android:id="@+id/year"
+                style="@style/DecadalCalendarTextYearAndAge"
+                android:text="2012" />
+
+            <LinearLayout
+                android:id="@+id/ageContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/age"
+                    style="@style/DecadalCalendarTextYearAndAge.Age"
+                    android:text="03" />
+
+                <ImageView
+                    android:id="@+id/ageStar"
+                    android:layout_width="@dimen/decadal_calendar_age_star_size"
+                    android:layout_height="@dimen/decadal_calendar_age_star_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/star" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/monthRow1"
+            style="@style/SingleColumnCalendarCellSubRow"
+            android:layout_toRightOf="@id/yearAndAge" >
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Jan" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Feb" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Mar" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Apr" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="May" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Jun" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/monthRow2"
+            style="@style/SingleColumnCalendarCellSubRow"
+            android:layout_below="@id/monthRow1"
+            android:layout_toRightOf="@id/yearAndAge" >
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Jul" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Aug" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Sep" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Oct" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Nov" />
+
+            <TextView
+                style="@style/SingleColumnCalendarText.Secondary"
+                android:text="Dec" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView style="@style/SingleColumnCalendarSeparator" />
+
+</LinearLayout>

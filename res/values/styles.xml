@@ -1,0 +1,325 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ================================================================= -->
+    <!-- App -->
+    <!-- ================================================================= -->
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionBarStyle</item>
+        <!-- <item name="android:windowBackground">@color/windowBgColor</item> -->
+        <item name="android:windowBackground">@drawable/app_background</item>
+    </style>
+
+    <style name="actionBarStyle" parent="android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:displayOptions">disableHome</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Calendar -->
+    <!-- ================================================================= -->
+
+    <style name="Calendar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">#FFFFFF</item>
+        <item name="android:paddingLeft">@dimen/calendar_spacing</item>
+        <item name="android:paddingRight">@dimen/calendar_spacing</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Yearly Calendar -->
+    <!-- ================================================================= -->
+
+    <style name="YearlyCalendarText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="YearlyCalendarText.Weekday">
+        <item name="android:textSize">@dimen/text_size_lv3</item>
+    </style>
+
+    <style name="YearlyCalendarText.Month">
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/yearly_calendar_spacing_half</item>
+        <item name="android:layout_marginBottom">@dimen/yearly_calendar_spacing_half</item>
+    </style>
+
+    <style name="YearlyCalendarText.Year">
+        <item name="android:textSize">@dimen/text_size_lv1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/yearly_calendar_spacing</item>
+        <item name="android:paddingBottom">@dimen/yearly_calendar_spacing</item>
+    </style>
+
+    <style name="YearlyCalendarText.EndOfYear">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/dotted_line_background</item>
+        <item name="android:layout_marginTop">@dimen/yearly_calendar_spacing_3x</item>
+        <item name="android:layout_marginBottom">@dimen/yearly_calendar_spacing_2x</item>
+        <item name="android:layout_marginLeft">@dimen/yearly_calendar_spacing</item>
+        <item name="android:layout_marginRight">@dimen/yearly_calendar_spacing</item>
+    </style>
+
+    <style name="YearlyCalendarMonthNameSeparator">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/dotted_line_background</item>
+        <item name="android:layout_marginLeft">@dimen/yearly_calendar_spacing</item>
+        <item name="android:layout_marginRight">@dimen/yearly_calendar_spacing</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Single Column Calendar -->
+    <!-- ================================================================= -->
+
+    <style name="SingleColumnCalendarCell">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/single_column_calendar_spacing</item>
+        <item name="android:paddingBottom">@dimen/single_column_calendar_spacing</item>
+    </style>
+
+    <style name="SingleColumnCalendarCellSubRow">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SingleColumnCalendarText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SingleColumnCalendarText.MainTitle">
+        <item name="android:textSize">@dimen/text_size_lv1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/single_column_calendar_spacing</item>
+        <item name="android:paddingBottom">@dimen/single_column_calendar_spacing</item>
+    </style>
+
+    <style name="SingleColumnCalendarText.Primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_lv2</item>
+        <item name="android:layout_marginRight">@dimen/single_column_calendar_spacing</item>
+    </style>
+
+    <style name="SingleColumnCalendarText.Secondary">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/text_size_lv2</item>
+    </style>
+
+    <style name="SingleColumnCalendarSeparator">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/dotted_line_background</item>
+        <item name="android:layout_marginTop">@dimen/single_column_calendar_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/single_column_calendar_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/single_column_calendar_spacing_half</item>
+        <item name="android:layout_marginRight">@dimen/single_column_calendar_spacing_half</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Decadal Calendar -->
+    <!-- ================================================================= -->
+
+    <style name="DecadalCalendarYearAndAgeCell">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/single_column_calendar_spacing</item>
+    </style>
+
+    <style name="DecadalCalendarTextYearAndAge">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_lv2</item>
+    </style>
+
+    <style name="DecadalCalendarTextYearAndAge.Age">
+        <item name="android:textSize">@dimen/text_size_lv3</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Centurial Calendar -->
+    <!-- ================================================================= -->
+
+    <style name="CenturialCalendarCenturyRow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_lv1</item>
+        <item name="android:paddingTop">@dimen/text_size_lv3</item>
+    </style>
+
+    <style name="CenturialCalendarDecadeRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CenturialCalendarYearRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/text_size_lv3</item>
+    </style>
+
+    <style name="CenturialCalendarSeparator">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/dotted_line_background</item>
+        <item name="android:layout_marginLeft">@dimen/single_column_calendar_spacing_half</item>
+        <item name="android:layout_marginRight">@dimen/single_column_calendar_spacing_half</item>
+        <item name="android:layout_marginTop">@dimen/text_size_lv3</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Timeline -->
+    <!-- ================================================================= -->
+
+    <style name="Calendar.Timeline">
+        <item name="android:paddingLeft">0px</item>
+    </style>
+
+    <style name="TimelineItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="TimelineDate">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">39sp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">@dimen/timeline_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/timeline_spacing</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_lv3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TimelineGoalContainer">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/timeline_spacing</item>
+    </style>
+
+    <style name="TimelineGoalDivider">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/dotted_line_background</item>
+        <item name="android:layout_marginBottom">@dimen/timeline_spacing</item>
+        <item name="android:layout_marginRight">@dimen/timeline_spacing</item>
+    </style>
+
+    <style name="TimelineGoal">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_size_lv2</item>
+    </style>
+
+    <style name="TimelineImageContainer">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/timeline_image_size</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/timeline_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/timeline_spacing</item>
+    </style>
+
+    <style name="TimelineDot">
+        <item name="android:layout_height">@dimen/timeline_image_size</item>
+        <item name="android:layout_width">@dimen/timeline_image_size</item>
+        <item name="android:layout_marginTop">19sp</item>
+        <item name="android:src">@drawable/timeline_dot</item>
+    </style>
+
+    <style name="TimelineLine">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/dotted_line_vertical_background</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Common -->
+    <!-- ================================================================= -->
+
+    <style name="ParagraphTextBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textMultiLine|textCapSentences</item>
+        <item name="android:minLines">1</item>
+    </style>
+
+    <style name="DatePickerSpinner" parent="android:style/Widget.DeviceDefault.Light.Spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- New Goal Form -->
+    <!-- ================================================================= -->
+
+    <style name="NewGoalForm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/text_size_new_goal_form</item>
+        <item name="android:paddingRight">@dimen/text_size_new_goal_form</item>
+    </style>
+
+    <style name="NewGoalFormLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_new_goal_form_label</item>
+        <item name="android:layout_marginTop">@dimen/text_size_new_goal_form_label</item>
+    </style>
+
+    <style name="NewGoalTextBox" parent="ParagraphTextBox">
+        <item name="android:textSize">@dimen/text_size_new_goal_form</item>
+    </style>
+
+    <style name="NewGoalDatePickerSpinner" parent="DatePickerSpinner">
+        <item name="android:textSize">@dimen/text_size_new_goal_form</item>
+    </style>
+
+    <!-- ================================================================= -->
+    <!-- Edit Goal Form -->
+    <!-- ================================================================= -->
+
+    <style name="EditGoalDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/text_size_edit_goal_form</item>
+    </style>
+
+    <style name="EditGoalDatePickerSpinner" parent="DatePickerSpinner">
+        <item name="android:textSize">@dimen/text_size_edit_goal_form</item>
+        <item name="android:layout_marginBottom">@dimen/text_size_edit_goal_form</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:paddingRight">13dp</item>
+    </style>
+
+    <style name="EditGoalTextBox" parent="ParagraphTextBox">
+        <item name="android:textSize">@dimen/text_size_edit_goal_form</item>
+        <item name="android:layout_marginBottom">@dimen/text_size_edit_goal_form</item>
+    </style>
+
+</resources>
