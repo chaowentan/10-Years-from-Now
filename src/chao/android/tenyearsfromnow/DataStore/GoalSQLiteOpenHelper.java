@@ -1,4 +1,4 @@
-package chao.android.tenyearsfromnow;
+package chao.android.tenyearsfromnow.DataStore;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

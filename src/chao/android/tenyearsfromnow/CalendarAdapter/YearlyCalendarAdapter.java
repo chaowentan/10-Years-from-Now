@@ -1,7 +1,11 @@
-package chao.android.tenyearsfromnow;
+package chao.android.tenyearsfromnow.CalendarAdapter;
 
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
+
+import chao.android.tenyearsfromnow.R;
+import chao.android.tenyearsfromnow.R.id;
+import chao.android.tenyearsfromnow.R.layout;
 
 import junit.framework.Assert;
 import android.content.Context;

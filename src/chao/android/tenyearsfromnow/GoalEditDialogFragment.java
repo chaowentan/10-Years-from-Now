@@ -16,7 +16,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import chao.android.tenyearsfromnow.GoalDataSource.Goal;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource.Goal;
 
 public class GoalEditDialogFragment extends DialogFragment implements
       OnClickListener, DatePickerDialog.OnDateSetListener
@@ -34,7 +34,7 @@ public class GoalEditDialogFragment extends DialogFragment implements
    private final GoalEditDialogListener mListener;
    private final Goal                   mGoal;
 
-   GoalEditDialogFragment(Fragment originFragment, Goal goal)
+   public GoalEditDialogFragment(Fragment originFragment, Goal goal)
    {
       mOriginFragment = originFragment;
       mListener = (GoalEditDialogListener) originFragment;

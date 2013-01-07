@@ -1,4 +1,4 @@
-package chao.android.tenyearsfromnow;
+package chao.android.tenyearsfromnow.CalendarAdapter;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -10,28 +10,30 @@ import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import chao.android.tenyearsfromnow.R;
+import chao.android.tenyearsfromnow.SettingActivity;
 
 public abstract class CalendarAdapter extends BaseAdapter
 {
    // Static Variables
 
-   static final int      MAX_POSITION                = Integer.MAX_VALUE;
-   static final int      MID_POSITION                = MAX_POSITION / 2;
-   static final Calendar CURRENT_CALENDAR            = Calendar.getInstance();
-   static final int      NUM_OF_YEARS_IN_A_DECADE    = 10;
-   static final int      NUM_OF_YEARS_IN_A_CENTURY   = 100;
-   static final int      NUM_OF_DECADES_IN_A_CENTURY = 10;
+   static final int        MAX_POSITION                = Integer.MAX_VALUE;
+   public static final int MID_POSITION                = MAX_POSITION / 2;
+   static final Calendar   CURRENT_CALENDAR            = Calendar.getInstance();
+   static final int        NUM_OF_YEARS_IN_A_DECADE    = 10;
+   static final int        NUM_OF_YEARS_IN_A_CENTURY   = 100;
+   static final int        NUM_OF_DECADES_IN_A_CENTURY = 10;
 
    // Instance Variables
 
-   final Context         mContext;
-   final LayoutInflater  mInflater;
-   final Resources       mResources;
+   final Context           mContext;
+   final LayoutInflater    mInflater;
+   final Resources         mResources;
 
-   final Typeface        mThinTypeface;
-   final Typeface        mLightTypeface;
-   final Typeface        mRegularTypeface;
-   final Typeface        mMediumTypeface;
+   final Typeface          mThinTypeface;
+   final Typeface          mLightTypeface;
+   final Typeface          mRegularTypeface;
+   final Typeface          mMediumTypeface;
 
    // /////////////////////////////////////////////////////////////////////////
    // Methods

@@ -1,4 +1,4 @@
-package chao.android.tenyearsfromnow;
+package chao.android.tenyearsfromnow.CalendarFragment;
 
 import android.app.DialogFragment;
 import android.app.ListFragment;
@@ -9,8 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
-import chao.android.tenyearsfromnow.GoalDataSource.Goal;
+import chao.android.tenyearsfromnow.GoalEditDialogFragment;
+import chao.android.tenyearsfromnow.MainActivity;
+import chao.android.tenyearsfromnow.R;
+import chao.android.tenyearsfromnow.Utility;
+import chao.android.tenyearsfromnow.CalendarAdapter.TimelineAdapter;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource.Goal;
 import chao.android.tenyearsfromnow.GoalEditDialogFragment.GoalEditDialogListener;
+import chao.android.tenyearsfromnow.R.layout;
+import chao.android.tenyearsfromnow.R.string;
 
 public class TimelineFragment extends ListFragment implements
       GoalEditDialogListener

@@ -1,5 +1,10 @@
 package chao.android.tenyearsfromnow;
 
+import chao.android.tenyearsfromnow.CalendarFragment.CenturialCalendarFragment;
+import chao.android.tenyearsfromnow.CalendarFragment.DecadalCalendarFragment;
+import chao.android.tenyearsfromnow.CalendarFragment.TimelineFragment;
+import chao.android.tenyearsfromnow.CalendarFragment.YearlyCalendarFragment;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;

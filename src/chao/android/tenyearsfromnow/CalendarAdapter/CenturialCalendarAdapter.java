@@ -1,8 +1,13 @@
-package chao.android.tenyearsfromnow;
+package chao.android.tenyearsfromnow.CalendarAdapter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+
+import chao.android.tenyearsfromnow.R;
+import chao.android.tenyearsfromnow.R.color;
+import chao.android.tenyearsfromnow.R.id;
+import chao.android.tenyearsfromnow.R.layout;
 
 import android.content.Context;
 import android.view.View;

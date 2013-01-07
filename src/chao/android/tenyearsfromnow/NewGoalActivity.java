@@ -13,7 +13,8 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
-import chao.android.tenyearsfromnow.GoalDataSource.Goal;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource.Goal;
 
 public class NewGoalActivity extends Activity implements
       DatePickerDialog.OnDateSetListener

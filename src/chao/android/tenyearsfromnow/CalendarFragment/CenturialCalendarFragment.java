@@ -1,5 +1,8 @@
-package chao.android.tenyearsfromnow;
+package chao.android.tenyearsfromnow.CalendarFragment;
 
+import chao.android.tenyearsfromnow.R;
+import chao.android.tenyearsfromnow.CalendarAdapter.CenturialCalendarAdapter;
+import chao.android.tenyearsfromnow.R.layout;
 import android.app.ListFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;

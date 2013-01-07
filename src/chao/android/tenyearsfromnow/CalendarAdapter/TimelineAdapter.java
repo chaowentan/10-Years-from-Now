@@ -1,4 +1,4 @@
-package chao.android.tenyearsfromnow;
+package chao.android.tenyearsfromnow.CalendarAdapter;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -9,7 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import chao.android.tenyearsfromnow.GoalDataSource.Goal;
+import chao.android.tenyearsfromnow.MainActivity;
+import chao.android.tenyearsfromnow.R;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource;
+import chao.android.tenyearsfromnow.DataStore.GoalDataSource.Goal;
+import chao.android.tenyearsfromnow.R.id;
+import chao.android.tenyearsfromnow.R.layout;
 
 public class TimelineAdapter extends CalendarAdapter
 {
